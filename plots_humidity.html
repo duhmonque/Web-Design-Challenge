@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weather Dashboard - Latitude VS Humidity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+<body>
+<div class="container-fluid my-0">
+    <div class="row my-0">
+        <nav class="navbar navbar-expand-lg py-0 my-0">
+            <div class="container-fluid">
+                <a class="navbar-brand title-text" href="index.html">Latitude</a>
+                <div class="collapse navbar-collapse custom-header" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Plots
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="plots_max_temp.html">Max Temperature</a></li>
+                                <li><a class="dropdown-item" href="plots_humidity.html">Humidity</a></li>
+                                <li><a class="dropdown-item" href="plots_cloudiness.html">Cloudiness</a></li>
+                                <li><a class="dropdown-item" href="plots_windspeed.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container-fluid our-data">
+    <div class="row">
+        <div class="col-6 offset-1">
+            <div class="box" style="padding-bottom: 20px;">
+                <h3 class="title">Latitude VS. Humidity</h3>
+                <hr>
+                <img src="assets/humiditymap.png" class="vizualization rounded main-text" alt="Humidity Graph">
+                <p>Humidity: There is not a strong relationship between humidity and the latitude. There does seem to be a cluster around a higher humidity and a
+                    increased in latitude. There seems to be an outlier around 0% humidity and 75 latitude.The data is pretty scattered.
+                </p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="box">
+                <h3 class="title">VISUALIZATIONS</h3>
+                <hr>
+                <div class="container">
+                    <div class="row" style="padding-bottom: 70px;">
+                        <div class="col-6">
+                            <div class="title">Latitude vs. Max Temperature</div>
+                            <a href="plots_max_temp.html">
+                                <img class="panel img-fluid" src="assets/temperaturemap.png" alt="Max Temperature Graph">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <div class="title">Latitude vs. Humidity</div>
+                            <a href="plots_humidity.html">
+                                <img class="panel img-fluid" src="assets/humiditymap.png" alt="Humidity Graph">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 70px;">
+                        <div class="col-6">
+                            <div class="title">Latitude vs. Cloudiness</div>
+                            <a href="plots_cloudiness.html">
+                                <img class="panel img-fluid" src="assets/cloudymap.png" alt="Cloudiness Graph">
+                            </a>
+                            <!-- <div class="title">vs. Cloudiness</div> -->
+                        </div>
+                        <div class="col-6">
+                            <div class="title">Latitude vs. Wind Speed</div>
+                            <a href="plots_windspeed.html">
+                                <img class="panel img-fluid" src="assets/windmap.png" alt="Wind Speed Graph">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- your content here... -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

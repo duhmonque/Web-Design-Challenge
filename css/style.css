@@ -1,0 +1,54 @@
+h3 {
+    font-size: 1.75rem !important;
+}
+
+.custom-header {
+    flex-grow: 0 !important;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+}
+
+.title-text {
+    background-color: #4AAAA5;
+    color: #FFF;
+    padding: 5px 12px;
+    font-weight: bold;
+}
+
+.title-text:hover, .title-text:visited {
+    color: #fff;
+}
+
+.main-text {
+    float: left;
+}
+
+.our-data {
+    background-color: #EDEDED;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.box {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding: 10px 30px 10px;
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    clear: both;
+    min-height: 60%;
+}
+
+.box p, .box .title {
+    color: #82909E;
+    font-size: 16px;
+}
+
+.vizualization {
+    width:50%;
+    height:50%;
+}
